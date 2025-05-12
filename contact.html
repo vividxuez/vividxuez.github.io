@@ -19,23 +19,20 @@
         </nav>
         <a href="contact.html" class="contact">Contact Me</a>
     </header>
-    <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/meogrold"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
 
+    <!-- Make sure the form is visible -->
+    <section style="margin: 20px; padding: 20px; border: 1px solid #ddd;">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/meogrold" method="POST">
+            <label for="email">Your email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Your message:</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
 </body>
 </html>
