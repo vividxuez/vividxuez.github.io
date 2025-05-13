@@ -3,6 +3,9 @@ const ctx = canvas.getContext("2d");
 canvas.width = 800;
 canvas.height = 600;
 
+let players = [];
+let botsEnabled = false;
+
 class Player {
     constructor(x, y, color) {
         this.x = x;
@@ -14,18 +17,24 @@ class Player {
         this.velocityY = 0;
         this.gravity = 0.5;
         this.jumpPower = -10;
+        this.bot = false;
     }
 
     move(keys) {
-        if (keys["ArrowLeft"]) this.velocityX = -5;
-        if (keys["ArrowRight"]) this.velocityX = 5;
-        if (keys["ArrowUp"]) this.velocityY = this.jumpPower;
+        if (!this.bot) {
+            if (keys["ArrowLeft"]) this.velocityX = -5;
+            if (keys["ArrowRight"]) this.velocityX = 5;
+            if (keys["ArrowUp"]) this.velocityY = this.jumpPower;
+        } else {
+            // Simple bot AI
+            if (Math.random() > 0.5) this.velocityX = Math.random() > 0.5 ? -5 : 5;
+            if (Math.random() > 0.9) this.velocityY = this.jumpPower;
+        }
 
         this.velocityY += this.gravity;
         this.x += this.velocityX;
         this.y += this.velocityY;
 
-        // Boundary control
         if (this.y > canvas.height - this.height) this.y = canvas.height - this.height;
     }
 
@@ -36,19 +45,28 @@ class Player {
 }
 
 let keys = {};
-let player1 = new Player(300, 500, "blue");
-let player2 = new Player(500, 500, "red"); // Second player
-
 window.addEventListener("keydown", (e) => keys[e.key] = true);
 window.addEventListener("keyup", (e) => keys[e.key] = false);
 
-function gameLoop() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    player1.move(keys);
-    player2.move(keys);
-    player1.draw();
-    player2.draw();
-    requestAnimationFrame(gameLoop);
+function startGame(playerCount) {
+    players = [];
+    let colors = ["blue", "red", "green", "yellow"];
+    for (let i = 0; i < playerCount; i++) {
+        players.push(new Player(100 + i * 150, 500, colors[i]));
+    }
+    gameLoop();
 }
 
-gameLoop();
+function toggleBots() {
+    botsEnabled = !botsEnabled;
+    players.forEach(player => player.bot = botsEnabled);
+}
+
+function gameLoop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    players.forEach(player => {
+        player.move(keys);
+        player.draw();
+    });
+    requestAnimationFrame(gameLoop);
+}
