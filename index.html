@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhantomBuilder's Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root {
+--primary: #7f5af0;
+--secondary: #2cb67d;
+--dark: #16161a;
+--light-dark: #242629;
+--text: #94a1b2;
+--heading: #fffffe;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: var(--dark);
+color: var(--text);
+scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+font-family: 'Space Mono', monospace;
+color: var(--heading);
+}
+
+.gradient-text {
+background: linear-gradient(90deg, var(--primary), var(--secondary));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+background: rgba(36, 38, 41, 0.7);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(127, 90, 240, 0.2);
+}
+
+.project-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 25px rgba(127, 90, 240, 0.3);
+}
+
+.social-icon:hover {
+transform: translateY(-3px);
+}
+</style>
+</head>
+<body class="min-h-screen">
+<!-- Music Player -->
+<div class="fixed top-4 left-4 z-50">
+<div class="glass-card rounded-full p-2 flex items-center space-x-2">
+<button id="musicToggle" class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white hover:bg-purple-700 transition">
+<i class="fas fa-music"></i>
+</button>
+<audio id="bgMusic" loop>
+<source src="new-music.mp3" type="audio/mpeg">
+</audio>
+<span id="musicStatus" class="text-xs font-mono hidden md:block"></span>
+<!-- This is for the music thing. the span thing is for the name -->
+</div>
+</div>
+
+<!-- Navigation -->
+<nav class="glass-card fixed top-0 left-0 right-0 z-40">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+<div class="flex-shrink-0">
+<span class="text-2xl font-bold gradient-text">PhantomBuilder</span>
+</div>
+</div>
+<div class="hidden md:block">
+<div class="ml-10 flex items-baseline space-x-6">
+<a href="#home" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Home</a>
+<a href="#portfolio" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Portfolio</a>
+<a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Services</a>
+<a href="#experience" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Experience</a>
+<a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Projects</a>
+<a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Contact</a>
+</div>
+</div>
+<div class="md:hidden">
+<button id="mobileMenuButton" class="text-gray-300 hover:text-white focus:outline-none">
+<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Mobile menu -->
+<div id="mobileMenu" class="hidden md:hidden bg-gray-900">
+<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+<a href="#home" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Home</a>
+<a href="#portfolio" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Portfolio</a>
+<a href="#services" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Services</a>
+<a href="#experience" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Experience</a>
+<a href="#projects" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Projects</a>
+<a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-purple-600 hover:bg-opacity-30 transition">Contact</a>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center pt-16 pb-12 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto text-center">
+<div class="glass-card rounded-2xl p-8 md:p-12 inline-block">
+<h1 class="text-4xl md:text-6xl font-bold mb-4">
+<span class="gradient-text">Phantom</span>Builder
+</h1>
+<p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+Creating immersive gaming experiences with innovative scripting and stunning visuals.
+Specializing in game design, Lua scripting, and 3D modeling for Roblox platforms.
+</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a href="#hire-me" class="bg-gradient-to-r from-purple-600 to-teal-500 text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition duration-300 shadow-lg">
+Hire Me
+</a>
+<a href="#portfolio" class="border border-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-600 hover:bg-opacity-30 transition duration-300">
+View Portfolio
+</a>
+</div>
+<div class="mt-12 flex justify-center space-x-6">
+<a href="#" class="social-icon text-gray-300 hover:text-white transition transform">
+<i class="fab fa-twitter text-2xl"></i>
+</a>
+<a href="#" class="social-icon text-gray-300 hover:text-white transition transform">
+<i class="fab fa-discord text-2xl"></i>
+</a>
+<!-- <a href="#" class="social-icon text-gray-300 hover:text-white transition transform">
+<i class="fab fa-github text-2xl"></i>
+</a> -->
+<a href="#" class="social-icon text-gray-300 hover:text-white transition transform">
+<i class="fab fa-linkedin text-2xl"></i>
+</a>
+<a href="#" class="social-icon text-gray-300 hover:text-white transition transform">
+<i class="fab fa-youtube text-2xl"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-16 px-4 sm:px-6 lg:px-8 bg-light-dark">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+My <span class="gradient-text">Portfolio</span>
+</h2>
+<p class="text-center max-w-2xl mx-auto mb-12">
+A showcase of my best work in the Roblox development space. Each project represents
+unique challenges and innovative solutions.
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Portfolio Item 1 -->
+<div class="glass-card rounded-xl overflow-hidden project-card transition duration-500">
+<div class="relative h-48 overflow-hidden">
+<img src="https://via.placeholder.com/600x400/7f5af0/ffffff?text=Adventure+Game" alt="Roblox Adventure Game" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="text-xl font-bold text-white">Wild Adventures</h3>
+<p class="text-teal-300 text-sm">3D Adventure Game</p>
+</div>
+</div>
+<div classp-4">
+<p class="text-sm mb-4">An immersive open-world adventure game with quests, combat, and exploration mechanics.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-purple-600 bg-opacity-20 text-xs rounded-full">Lua Scripting</span>
+<span class="px-2 py-1 bg-teal-500 bg-opacity-20 text-xs rounded-full">Game Design</span>
+<span class="px-2 py-1 bg-pink-500 bg-opacity-20 text-xs rounded-full">3D Modeling</span>
+</div>
+</div>
+</div>
+
+<!-- Portfolio Item 2 -->
+<div class="glass-card rounded-xl overflow-hidden project-card transition duration-500">
+<div class="relative h-48 overflow-hidden">
+<img src="https://via.placeholder.com/600x400/2cb67d/ffffff?text=Tycoon+Game" alt="Roblox Tycoon Game" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="text-xl font-bold text-white">Mega Tycoon</h3>
+<p class="text-purple-300 text-sm">Business Simulation</p>
+</div>
+</div>
+<div class="p-4">
+<p class="text-sm mb-4">A complex tycoon game with sophisticated money-making mechanics and upgradable systems.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-purple-600 bg-opacity-20 text-xs rounded-full">Systems Design</span>
+<span class="px-2 py-1 bg-teal-500 bg-opacity-20 text-xs rounded-full">UI/UX</span>
+<span class="px-2 py-1 bg-yellow-500 bg-opacity-20 text-xs rounded-full">Economy Design</span>
+</div>
+</div>
+</div>
+
+<!-- Portfolio Item 3 -->
+<div class="glass-card rounded-xl overflow-hidden project-card transition duration-500">
+<div class="relative h-48 overflow-hidden">
+<img src="https://via.placeholder.com/600x400/7f5af0/ffffff?text=RPG+Game" alt="Roblox RPG Game" class="w-full h-full object-cover">
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="text-xl font-bold text-white">Dungeon RPG</h3>
+<p class="text-teal-300 text-sm">Role Playing Game</p>
+</div>
+</div>
+<div class="p-4">
+<p class="text-sm mb-4">A fantasy RPG with character progression, skill trees, and multiplayer PVE/PVP systems.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-purple-600 bg-opacity-20 text-xs rounded-full">Combat Systems</span>
+<span class="px-2 py-1 bg-teal-500 bg-opacity-20 text-xs rounded-full">Progression</span>
+<span class="px-2 py-1 bg-red-500 bg-opacity-20 text-xs rounded-full">Multiplayer</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="text-center mt-12">
+<a href="#projects" class="inline-block border border-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-600 hover:bg-opacity-30 transition duration-300">
+View All Projects
+</a>
+</div>
+</div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-16 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+My <span class="gradient-text">Services</span>
+</h2>
+<p class="text-center max-w-2xl mx-auto mb-12">
+Comprehensive Roblox development services tailored to bring your gaming ideas to life.
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="glass-card p-6 rounded-xl">
+<div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mb-4">
+<i class="fas fa-code text-white text-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Lua Scripting</h3>
+<p class="mb-4">
+Expert Lua scripting for game mechanics, systems, and optimization to ensure smooth gameplay experiences.
+</p>
+<ul class="space-y-2 text-sm">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-2"></i>
+<span>Custom game mechanics</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-2"></i>
+<span>UI scripting</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-2"></i>
+<span>Data management</span>
+</li>
+</ul>
+</div>
+
+<div class="glass-card p-6 rounded-xl">
+<div class="w-12 h-12 rounded-full bg-teal-500 flex items-center justify-center mb-4">
+<i class="fas fa-gamepad text-white text-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Game Design</h3>
+<p class="mb-4">
+Engaging game design with balanced mechanics, progression systems, and monetization strategies.
+</p>
+<ul class="space-y-2 text-sm">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
+<span>Core loop design</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
+<span>Economy systems</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
+<span>Player engagement</span>
+</li>
+</ul>
+</div>
+
+<div class="glass-card p-6 rounded-xl">
+<div class="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center mb-4">
+<i class="fas fa-cube text-white text-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">3D Modeling</h3>
+<p class="mb-4">
+High-quality 3D modeling for game assets, environments, and characters optimized for Roblox.
+</p>
+<ul class="space-y-2 text-sm">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<span>Custom assets</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<span>Environment design</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<span>Optimization</span>
+</li>
+</ul>
+</div>
+
+<div class="glass-card p-6 rounded-xl">
+<div class="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center mb-4">
+<i class="fas fa-users text-white text-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Multiplayer Systems</h3>
+<p class="mb-4">
+Robust multiplayer solutions including matchmaking, networking, and synchronization.
+</p>
+<ul class="space-y-2 text-sm">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+<span>Player interactions</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+<span>Server architecture</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+<span>Data security</span>
+</li>
+</ul>
+</div>
+
+<div class="glass-card p-6 rounded-xl">
+<div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mb-4">
+<i class="fas fa-tv text-white text-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+<p class="mb-4">
+Intuitive and visually appealing user interfaces designed to enhance player experience.
+</p>
+<ul class="space-y-2 text-sm">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-yellow-400 mt-1 mr-2"></i>
+<span>Interface design</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-yellow-400 mt-1 mr-2"></i>
+<span>Usability testing</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-yellow-400 mt-1 mr-2"></i>
+<span>Interactive elements</span>
+</li>
+</ul>
+</div>
+
+<div class="glass-card p-6 rounded-xl">
+<div class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center mb-4">
+<i class="fas fa-wallet text-white text-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Monetization</h3>
+<p class="mb-4">
+Ethical monetization strategies including in-game purchases, VIP systems, and ads integration.
+</p>
+<ul class="space-y-2 text-sm">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-pink-400 mt-1 mr-2"></i>
+<span>Game passes</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-pink-400 mt-1 mr-2"></i>
+<span>Developer products</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-pink-400 mt-1 mr-2"></i>
+<span>Economy balance</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-16 px-4 sm:px-6 lg:px-8 bg-light-dark">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+My <span class="gradient-text">Experience</span>
+</h2>
+<p class="text-center max-w-2xl mx-auto mb-12">
+Years of professional experience crafting Roblox games that engage players and drive revenue.
+</p>
+
+<div class="relative">
+<!-- Timeline line -->
+<div class="hidden md:block absolute top-0 bottom-0 left-1/2 w-1 bg-gradient-to-b from-purple-600 to-teal-500 rounded-full"></div>
+
+<!-- Timeline items -->
+<div class="space-y-8 md:space-y-0">
+<!-- Item 1 -->
+<div class="relative md:flex justify-between items-center">
+<div class="glass-card p-6 rounded-xl max-w-md mb-6 md:mb-0 md:mr-12 md:w-1/2">
+<div class="flex items-center mb-2">
+<div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center mr-4">
+<i class="fas fa-briefcase text-white text-sm"></i>
+</div>
+<h3 class="text-xl font-bold">Senior Roblox Developer</h3>
+</div>
+<h4 class="text-sm font-mono text-teal-300 mb-2">Current. | 2021 - Present</h4>
+<p>
+Lead developer for multiple top-grossing Roblox games with over 10M+ visits.
+Responsible for architecting game systems, mentoring junior developers, and optimizing performance.
+</p>
+</div>
+<div class="hidden md:block w-1/2"></div>
+</div>
+
+<!-- Item 2 -->
+<div class="relative md:flex justify-between items-center">
+<div class="hidden md:block w-1/2"></div>
+<div class="glass-card p-6 rounded-xl max-w-md md:ml-12 md:w-1/2">
+<div class="flex items-center mb-2">
+<div class="w-8 h-8 rounded-full bg-teal-500 flex items-center justify-center mr-4">
+<i class="fas fa-code text-white text-sm"></i>
+</div>
+<h3 class="text-xl font-bold">Freelance Developer</h3>
+</div>
+<h4 class="text-sm font-mono text-purple-300 mb-2">Self-Employed | 2019 - 2021</h4>
+<p>
+Worked with multiple clients to develop custom Roblox experiences, ranging from tycoon games
+to complex RPG systems. Developed expertise in Lua scripting, game design, and UI development.
+</p>
+</div>
+</div>
+
+<!-- Item 3 -->
+<div class="relative md:flex justify-between items-center">
+<div class="glass-card p-6 rounded-xl max-w-md mb-6 md:mb-0 md:mr-12 md:w-1/2">
+<div class="flex items-center mb-2">
+<div class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center mr-4">
+<i class="fas fa-graduation-cap text-white text-sm"></i>
+</div>
+<h3 class="text-xl font-bold">Game Development Education</h3>
+</div>
+<h4 class="text-sm font-mono text-blue-300 mb-2">Various Sources | 2016 - 2019</h4>
+<p>
+Self-taught through online courses, documentation, and community resources. Built foundational
+knowledge in programming, 3D modeling, and game design principles specific to the Roblox platform.
+</p>
+</div>
+<div class="hidden md:block w-1/2"></div>
+</div>
+
+<!-- Item 4 -->
+<div class="relative md:flex justify-between items-center">
+<div class="hidden md:block w-1/2"></div>
+<div class="glass-card p-6 rounded-xl max-w-md md:ml-12 md:w-1/2">
+<div class="flex items-center mb-2">
+<div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+<i class="fas fa-gamepad text-white text-sm"></i>
+</div>
+<h3 class="text-xl font-bold">Early Projects</h3>
+</div>
+<h4 class="text-sm font-mono text-yellow-300 mb-2">Hobbyist | 2015 - 2016</h4>
+<p>
+Began experimenting with Roblox Studio, creating simple games and learning the fundamentals of
+game development through hands-on experience and community feedback.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mt-12 flex flex-wrap justify-center gap-4">
+<div class="glass-card p-4 rounded-lg w-40 text-center">
+<div class="text-4xl font-bold gradient-text mb-1">5+</div>
+<div class="text-sm">Years Experience</div>
+</div>
+<div class="glass-card p-4 rounded-lg w-40 text-center">
+<div class="text-4xl font-bold gradient-text mb-1">50+</div>
+<div class="text-sm">Projects Completed</div>
+</div>
+<div class="glass-card p-4 rounded-lg w-40 text-center">
+<div class="text-4xl font-bold gradient-text mb-1">10M+</div>
+<div class="text-sm">Game Visits</div>
+</div>
+<div class="glass-card p-4 rounded-lg w-40 text-center">
+<div class="text-4xl font-bold gradient-text mb-1">20+</div>
+<div class="text-sm">Happy Clients</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-16 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+Featured <span class="gradient-text">Projects</span>
+</h2>
+<p class="text-center max-w-2xl mx-auto mb-12">
+A deeper dive into some of my most successful Roblox game development projects.
+</p>
+
+<!-- Project 1 -->
+<div class="glass-card rounded-xl overflow-hidden mb-12">
+<div class="flex flex-col md:flex-row">
+<div class="w-full md:w-1/2">
+<img src="https://via.placeholder.com/800x500/7f5af0/ffffff?text=Adventure+Islands" alt="Islands" class="w-full h-full object-cover">
+</div>
+<div class="w-full md:w-1/2 p-8">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center mr-4">
+<i class="fas fa-mountain text-white"></i>
+</div>
+<h3 class="text-2xl font-bold">Islands</h3>
+</div>
+<p class="mb-6">
+A massively popular open-world adventure game with procedurally generated islands,
+questing systems, and multiplayer cooperation. Features include:
+</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-2"></i>
+<span>Procedural world generation with unique biomes and landmarks</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-2"></i>
+<span>Skill-based progression system with 50+ abilities</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-2"></i>
+<span>Over 200 hand-crafted quests with branching narratives</span>
+</li>
+</ul>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-purple-600 bg-opacity-20 text-xs rounded-full">Lua Scripting</span>
+<span class="px-3 py-1 bg-teal-500 bg-opacity-20 text-xs rounded-full">Game Design</span>
+<span class="px-3 py-1 bg-yellow-500 bg-opacity-20 text-xs rounded-full">3D Modeling</span>
+<span class="px-3 py-1 bg-green-500 bg-opacity-20 text-xs rounded-full">Multiplayer</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#" class="flex-1 text-center bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition duration-300 flex items-center justify-center">
+<i class="fab fa-roblox mr-2"></i> Play Game
+</a>
+<a href="#" class="flex-1 text-center border border-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-600 hover:bg-opacity-30 transition duration-300">
+Case Study
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Project 2 -->
+<div class="glass-card rounded-xl overflow-hidden mb-12">
+<div class="flex flex-col md:flex-row-reverse">
+<div class="w-full md:w-1/2">
+<img src="https://via.placeholder.com/800x500/2cb67d/ffffff?text=Dragon+Tyrants" alt="Dragon Adventures" class="w-full h-full object-cover">
+</div>
+<div class="w-full md:w-1/2 p-8">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center mr-4">
+<i class="fas fa-dragon text-white"></i>
+</div>
+<h3 class="text-2xl font-bold">Dragon Adventures</h3>
+</div>
+<p class="mb-6">
+A fantasy RPG with intricate class systems, massive dungeons, and epic dragon battles.
+Key achievements include:
+</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
+<span>Complex combat system with 12 unique classes and skill combinations</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
+<span>Dungeon generator creating randomized layouts and challenges</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-purple-400 mt-1 mr-2"></i>
+<span>Boss AI with multiple phases and attack patterns</span>
+</li>
+</ul>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-purple-600 bg-opacity-20 text-xs rounded-full">AI Programming</span>
+<span class="px-3 py-1 bg-teal-500 bg-opacity-20 text-xs rounded-full">Combat Systems</span>
+<span class="px-3 py-1 bg-red-500 bg-opacity-20 text-xs rounded-full">Multiplayer Sync</span>
+<span class="px-3 py-1 bg-blue-500 bg-opacity-20 text-xs rounded-full">UI/UX</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#" class="flex-1 text-center bg-teal-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-teal-600 transition duration-300 flex items-center justify-center">
+<i class="fab fa-roblox mr-2"></i> Play Game
+</a>
+<a href="#" class="flex-1 text-center border border-teal-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-teal-500 hover:bg-opacity-30 transition duration-300">
+Case Study
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Project 3 -->
+<div class="glass-card rounded-xl overflow-hidden">
+<div class="flex flex-col md:flex-row">
+<div class="w-full md:w-1/2">
+<img src="https://via.placeholder.com/800x500/72757e/ffffff?text=Neon+Racers" alt="Neon Racers" class="w-full h-full object-cover">
+</div>
+<div class="w-full md:w-1/2 p-8">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center mr-4">
+<i class="fas fa-car text-white"></i>
+</div>
+<h3 class="text-2xl font-bold">Neon Racers</h3>
+</div>
+<p class="mb-6">
+A high-octane racing game with customizable vehicles, neon aesthetics,
+and competitive leaderboards. Technical highlights:
+</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<span>Custom physics engine for realistic vehicle handling</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<span>Track editor allowing community content creation</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-blue-400 mt-1 mr-2"></i>
+<span>Live leaderboards with seasonal rewards</span>
+</li>
+</ul>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-purple-600 bg-opacity-20 text-xs rounded-full">Physics</span>
+<span class="px-3 py-1 bg-teal-500 bg-opacity-20 text-xs rounded-full">Networking</span>
+<span class="px-3 py-1 bg-pink-500 bg-opacity-20 text-xs rounded-full">3D Modeling</span>
+<span class="px-3 py-1 bg-indigo-500 bg-opacity-20 text-xs rounded-full">Monetization</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#" class="flex-1 text-center bg-yellow-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-yellow-600 transition duration-300 flex items-center justify-center">
+<i class="fab fa-roblox mr-2"></i> Play Game
+</a>
+<a href="#" class="flex-1 text-center border border-yellow-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-yellow-500 hover:bg-opacity-30 transition duration-300">
+Case Study
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Hire Me Section -->
+<section id="hire-me" class="py-16 px-4 sm:px-6 lg:px-8 bg-light-dark">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-2">
+Want to <span class="gradient-text">Work Together</span>?
+</h2>
+<p class="mb-8 text-lg">
+I'm currently available for freelance work or full-time positions. Let's create something amazing!
+</p>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<div class="glass-card rounded-xl p-6">
+<div class="w-16 h-16 rounded-full bg-purple-600 flex items-center justify-center mx-auto mb-4">
+<i class="fas fa-hourglass-half text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Freelance Project</h3>
+<p class="mb-4 text-sm">
+Need a specific feature or complete game developed? I can help with both small and large projects.
+</p>
+<p class="text-teal-300 font-bold">$50 - $150/hr</p>
+</div>
+
+<div class="glass-card rounded-xl p-6 border-2 border-teal-500 transform scale-105 z-10">
+<div class="w-16 h-16 rounded-full bg-teal-500 flex items-center justify-center mx-auto mb-4">
+<i class="fas fa-user-tie text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Full Time</h3>
+<p class="mb-4 text-sm">
+Looking for a dedicated developer to join your team? I bring experience and passion to every project.
+</p>
+<p class="text-purple-300 font-bold">Negotiable Salary</p>
+</div>
+
+<div class="glass-card rounded-xl p-6">
+<div class="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center mx-auto mb-4">
+<i class="fas fa-question-circle text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Consultation</h3>
+<p class="mb-4 text-sm">
+Need advice on your project? I can provide technical guidance and design recommendations.
+</p>
+<p class="text-blue-300 font-bold">$75/hr</p>
+</div>
+</div>
+
+<div class="text-center mb-12">
+<a href="#contact" class="inline-block bg-gradient-to-r from-purple-600 to-teal-500 text-white px-8 py-4 rounded-lg font-bold hover:opacity-90 transition duration-300 shadow-lg text-lg">
+Get In Touch
+</a>
+</div>
+
+<div class="glass-card rounded-xl p-6 max-w-2xl mx-auto">
+<h3 class="text-xl font-bold mb-4">Development Process</h3>
+<div class="flex flex-col space-y-4">
+<div class="flex items-start">
+<div class="flex-shrink-0 h-8 w-8 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold mr-4">1</div>
+<div>
+<h4 class="font-bold">Discovery</h4>
+<p class="text-sm">Understand project goals, scope, and requirements</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0 h-8 w-8 rounded-full bg-teal-500 flex items-center justify-center text-white font-bold mr-4">2</div>
+<div>
+<h4 class="font-bold">Prototyping</h4>
+<p class="text-sm">Create quick prototypes to validate gameplay concepts</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0 h-8 w-8 rounded-full bg-yellow-500 flex items-center justify-center text-white font-bold mr-4">3</div>
+<div>
+<h4 class="font-bold">Development</h4>
+<p class="text-sm">Implement core systems and iterate based on feedback</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0 h-8 w-8 rounded-full bg-red-500 flex items-center justify-center text-white font-bold mr-4">4</div>
+<div>
+<h4 class="font-bold">Testing</h4>
+<p class="text-sm">Ensure quality through playtesting and optimization</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex-shrink-0 h-8 w-8 rounded-full bg-green-500 flex items-center justify-center text-white font-bold mr-4">5</div>
+<div>
+<h4 class="font-bold">Launch</h4>
+<p class="text-sm">Deploy the game and provide ongoing support</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl md:text-4xl font-bold mb-2 text-center">
+Get In <span class="gradient-text">Touch</span>
+</h2>
+<p class="text-center max-w-2xl mx-auto mb-12">
+Have a project in mind or want to discuss potential work? Feel free to reach out!
+</p>
+
+<div class="glass-card rounded-xl overflow-hidden">
+<div class="flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 p-8">
+<h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+
+<div class="mb-8">
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center mr-4">
+<i class="fas fa-envelope text-white"></i>
+</div>
+<div>
+<h4 class="font-bold">Email</h4>
+<a href="mailto:scallinisbackv2@gmail.com" class="text-teal-300 hover:underline">scallinisbackv2@gmail.com</a>
+</div>
+</div>
+
+<div class="flex items-center mb-4">
+<div class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center mr-4">
+<i class="fab fa-discord text-white"></i>
+</div>
+<div>
+<h4 class="font-bold">Discord</h4>
+<p class="text-purple-300">BuilderPhantom</p>
+</div>
+</div>
+
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+<i class="fab fa-roblox text-white"></i>
+</div>
+<div>
+<h4 class="font-bold">Roblox Profile</h4>
+<a href="#" class="text-yellow-300 hover:underline">Onett</a>
+</div>
+</div>
+</div>
+
+<h3 class="text-2xl font-bold mb-6">Find Me On</h3>
+<div class="flex space-x-6">
+<a href="#" class="social-icon text-gray-300 hover:text-purple-400 transition transform">
+<i class="fab fa-twitter text-2xl"></i>
+</a>
+<a href="#" class="social-icon text-gray-300 hover:text-indigo-500 transition transform">
+<i class="fab fa-discord text-2xl"></i>
+</a>
+<a href="#" class="social-icon text-gray-300 hover:text-gray-800 transition transform">
+<!-- <i class="fab fa-github text-2xl"></i>
+</a> -->
+<a href="#" class="social-icon text-gray-300 hover:text-blue-600 transition transform">
+<i class="fab fa-linkedin text-2xl"></i>
+</a>
+<a href="#" class="social-icon text-gray-300 hover:text-red-600 transition transform">
+<i class="fab fa-youtube text-2xl"></i>
+</a>
+</div>
+</div>
+
+<div class="w-full md:w-1/2 bg-light-dark p-8">
+<h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+<form>
+<div class="mb-4">
+<label for="name" class="block text-sm font-medium mb-1">Name</label>
+<input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-dark border border-gray-700 focus:border-purple-600 focus:outline-none">
+</div>
+<div class="mb-4">
+<label for="email" class="block text-sm font-medium mb-1">Email</label>
+<input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-dark border border-gray-700 focus:border-teal-500 focus:outline-none">
+</div>
+<div class="mb-4">
+<label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+<select id="subject" class="w-full px-4 py-2 rounded-lg bg-dark border border-gray-700 focus:border-purple-600 focus:outline-none">
+<option value="">Select a subject</option>
+<option value="freelance">Freelance Project</option>
+<option value="fulltime">Full-Time Position</option>
+<option value="consultation">Consultation</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="mb-6">
+<label for="message" class="block text-sm font-medium mb-1">Message</label>
+<textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-dark border border-gray-700 focus:border-teal-500 focus:outline-none"></textarea>
+</div>
+<button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-teal-500 text-white px-4 py-3 rounded-lg font-medium hover:opacity-90 transition duration-300">
+Send Message
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<span class="text-2xl font-bold gradient-text">PhantomBuilder</span>
+<p class="text-sm mt-1">Crafting immersive gaming experiences since 2016</p>
+</div>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-400 hover:text-white transition">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition">
+<i class="fab fa-discord"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition">
+<!-- <i class="fab fa-github"></i>
+</a> -->
+<a href="#" class="text-gray-400 hover:text-white transition">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white transition">
+<i class="fab fa-roblox"></i>
+</a>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+<p>© 2023 Roblox Developer Portfolio. All rights reserved.</p>
+<p class="mt-2">Crafted with passion for game development and design.</p>
+</div>
+</div>
+</footer>
+
+<script>
+// Mobile menu toggle
+document.getElementById('mobileMenuButton').addEventListener('click', function() {
+const menu = document.getElementById('mobileMenu');
+menu.classList.toggle('hidden');
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+// Close mobile menu if open
+const mobileMenu = document.getElementById('mobileMenu');
+if (!mobileMenu.classList.contains('hidden')) {
+mobileMenu.classList.add('hidden');
+}
+
+// Scroll to target
+window.scrollTo({
+top: targetElement.offsetTop - 70,
+behavior: 'smooth'
+});
+}
+});
+});
+
+// Background music toggle
+const musicToggle = document.getElementById('musicToggle');
+const musicStatus = document.getElementById('musicStatus');
+const bgMusic = document.getElementById('bgMusic');
+
+let musicPlaying = false;
+
+musicToggle.addEventListener('click', function() {
+if (musicPlaying) {
+bgMusic.pause();
+musicStatus.textContent = '';
+this.innerHTML = '<i class="fas fa-volume-mute"></i>';
+} else {
+bgMusic.play();
+musicStatus.textContent = '';
+this.innerHTML = '<i class="fas fa-music"></i>';
+<!-- the thing beihnd i and all is on and off first on textContext = 'OFF or On'-->
+}
+musicPlaying = !musicPlaying;
+});
+
+// Change music by updating the src in the audio element
+// Example: bgMusic.src = 'new-music.mp3'; bgMusic.play();
+</script>
+</body>
+</html>
